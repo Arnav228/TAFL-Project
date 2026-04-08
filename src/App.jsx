@@ -525,228 +525,171 @@ const styles = {
   page: {
     minHeight: "100vh",
     padding: "2rem 1rem",
-    background:
-      "linear-gradient(180deg, rgba(244,248,255,1) 0%, rgba(232,242,255,1) 100%)",
+    background: "linear-gradient(135deg, #1e1e2f, #2c2c54)",
     display: "flex",
     justifyContent: "center",
     alignItems: "flex-start",
-    fontFamily: "Inter, system-ui, Arial, sans-serif",
-    color: "#1f2937",
+    fontFamily: "Poppins, Inter, sans-serif",
+    color: "#f1f5f9",
   },
+
   card: {
     width: "100%",
-    maxWidth: "980px",
-    background: "#ffffff",
-    borderRadius: "14px",
-    boxShadow: "0 10px 30px rgba(15, 23, 42, 0.1)",
-    padding: "1.5rem",
+    maxWidth: "1000px",
+    background: "rgba(255,255,255,0.05)",
+    backdropFilter: "blur(10px)",
+    borderRadius: "16px",
+    boxShadow: "0 10px 40px rgba(0,0,0,0.4)",
+    padding: "1.8rem",
   },
+
   title: {
     margin: "0 0 0.5rem",
-    fontSize: "1.85rem",
+    fontSize: "2rem",
+    textAlign: "center",
+    fontWeight: "800",
   },
+
   subtitle: {
     margin: "0 0 1.5rem",
-    color: "#4b5563",
+    color: "#cbd5e1",
+    textAlign: "center",
   },
+
   form: {
     display: "grid",
     gap: "1.25rem",
   },
+
   inputGrid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
     gap: "1rem",
   },
+
   field: {
     display: "grid",
     gap: "0.45rem",
   },
+
   label: {
     fontSize: "0.9rem",
     fontWeight: 600,
-    color: "#374151",
+    color: "#cbd5e1",
   },
+
   input: {
     width: "100%",
-    border: "1px solid #d1d5db",
+    border: "1px solid #334155",
     borderRadius: "8px",
-    padding: "0.55rem 0.65rem",
+    padding: "0.55rem",
     fontSize: "0.95rem",
-    background: "#fff",
+    background: "#0f172a",
+    color: "#f1f5f9",
   },
+
   tableSection: {
     display: "grid",
     gap: "0.65rem",
   },
+
   sectionTitle: {
     margin: 0,
-    fontSize: "1.05rem",
+    fontSize: "1.1rem",
+    color: "#e2e8f0",
   },
+
   helperText: {
     margin: 0,
-    color: "#6b7280",
+    color: "#94a3b8",
     fontSize: "0.9rem",
   },
+
   tableWrap: {
     overflowX: "auto",
-    border: "1px solid #e5e7eb",
+    border: "1px solid #334155",
     borderRadius: "10px",
   },
+
   table: {
     width: "100%",
     borderCollapse: "collapse",
     minWidth: "550px",
   },
+
   th: {
-    background: "#f9fafb",
-    textAlign: "left",
+    background: "#1e293b",
     padding: "0.7rem",
-    fontSize: "0.9rem",
-    borderBottom: "1px solid #e5e7eb",
+    color: "#e2e8f0",
   },
+
   td: {
-    borderBottom: "1px solid #f3f4f6",
-    padding: "0.55rem 0.65rem",
+    borderBottom: "1px solid #334155",
+    padding: "0.55rem",
   },
+
   stateCell: {
     fontWeight: 600,
-    padding: "0.55rem 0.65rem",
-    borderBottom: "1px solid #f3f4f6",
-    background: "#fcfdff",
+    padding: "0.55rem",
+    background: "#0f172a",
   },
+
   select: {
     width: "100%",
-    border: "1px solid #d1d5db",
+    border: "1px solid #334155",
     borderRadius: "7px",
-    padding: "0.45rem 0.5rem",
-    background: "#fff",
+    padding: "0.45rem",
+    background: "#0f172a",
+    color: "#f1f5f9",
   },
+
   button: {
-    justifySelf: "start",
     border: "none",
-    borderRadius: "9px",
-    background: "#2563eb",
+    borderRadius: "10px",
+    background: "#6366f1",
     color: "#fff",
-    padding: "0.65rem 1.15rem",
-    fontSize: "0.95rem",
-    fontWeight: 600,
+    padding: "0.7rem 1.3rem",
+    fontWeight: "600",
     cursor: "pointer",
+    transition: "0.3s",
   },
+
   errorBox: {
     marginTop: "1rem",
-    padding: "0.85rem 1rem",
+    padding: "0.85rem",
     borderRadius: "10px",
-    background: "#fef2f2",
-    border: "1px solid #fecaca",
-    color: "#991b1b",
+    background: "#7f1d1d",
+    color: "#fecaca",
   },
+
   stepSection: {
     marginTop: "1.5rem",
     paddingTop: "1rem",
-    borderTop: "1px solid #e5e7eb",
+    borderTop: "1px solid #334155",
     display: "grid",
     gap: "1rem",
   },
-  stepHeaderRow: {
-    display: "flex",
-    gap: "1rem",
-    alignItems: "center",
-    justifyContent: "space-between",
-    flexWrap: "wrap",
-  },
+
   stepTitle: {
-    fontSize: "1.15rem",
-    fontWeight: 800,
+    fontSize: "1.2rem",
+    fontWeight: "800",
   },
-  stepControls: {
-    display: "flex",
-    gap: "0.75rem",
-    alignItems: "center",
-  },
-  navButton: {
-    border: "1px solid #d1d5db",
-    borderRadius: "10px",
-    background: "#fff",
-    color: "#111827",
-    padding: "0.55rem 0.85rem",
-    fontSize: "0.9rem",
-    fontWeight: 700,
-    cursor: "pointer",
-  },
-  navButtonDisabled: {
-    opacity: 0.55,
-    cursor: "not-allowed",
-  },
-  stepBody: {
-    display: "grid",
-    gap: "1rem",
-  },
-  stepDescription: {
-    padding: "0.85rem 1rem",
-    borderRadius: "10px",
-    background: "#f9fafb",
-    border: "1px solid #e5e7eb",
-    color: "#111827",
-  },
-  groupSection: {
-    display: "grid",
-    gap: "0.65rem",
-  },
-  badgeRow: {
-    display: "flex",
-    flexWrap: "wrap",
-    gap: "0.6rem",
-  },
-  badge: {
-    border: "1px solid #e5e7eb",
-    borderRadius: "999px",
-    padding: "0.4rem 0.7rem",
-    fontSize: "0.9rem",
-    background: "#fff",
-  },
+
   summaryBox: {
     padding: "1rem",
     borderRadius: "12px",
-    background: "#f9fafb",
-    border: "1px solid #e5e7eb",
-    display: "grid",
-    gap: "1rem",
+    background: "#1e293b",
+    border: "1px solid #334155",
   },
-  summaryRow: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-    gap: "0.9rem",
-  },
-  summaryLabel: {
-    color: "#6b7280",
-    fontSize: "0.85rem",
-    marginBottom: "0.25rem",
-    fontWeight: 700,
-  },
-  summaryValue: {
-    fontWeight: 800,
-    color: "#111827",
-  },
-  buttonSecondary: {
-    border: "1px solid #d1d5db",
-    borderRadius: "10px",
-    background: "#fff",
-    color: "#111827",
-    padding: "0.65rem 1.15rem",
-    fontSize: "0.95rem",
-    fontWeight: 700,
-    cursor: "pointer",
-    justifySelf: "start",
-  },
+
   graphsSection: {
-    marginTop: "1.25rem",
+    marginTop: "1.5rem",
   },
+
   graphsGrid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
     gap: "1rem",
-    alignItems: "start",
   },
 };
 

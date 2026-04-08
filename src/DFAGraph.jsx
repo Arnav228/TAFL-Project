@@ -237,20 +237,23 @@ const styles = {
     display: "grid",
     gap: "0.5rem",
   },
+
   title: {
     fontWeight: 800,
-    color: "#111827",
+    color: "#e2e8f0",
+    textAlign: "center",
   },
+
   container: {
     height: 400,
-    border: "1px solid #e5e7eb",
     borderRadius: 12,
-    background: "#f8fafc",
+    background: "#0f172a",
+    boxShadow: "0 8px 20px rgba(0,0,0,0.5)",
     overflow: "hidden",
   },
+
   cy: {
     width: "100%",
     height: "100%",
   },
 };
-
