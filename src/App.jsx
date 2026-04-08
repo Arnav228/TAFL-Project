@@ -261,9 +261,35 @@ function App() {
             )}
           </section>
 
-          <button type="submit" style={styles.button}>
-            Minimize
-          </button>
+          <div style={{ display: "flex", gap: "10px" }}>
+  <button type="submit" style={styles.button}>
+    Minimize
+  </button>
+
+  <button
+    type="button"
+    style={styles.buttonSecondary}
+    onClick={() => {
+      setNumStates(4);
+      setAlphabetInput("0,1");
+      setStartState("q0");
+      setAcceptStatesInput("q2,q3");
+
+      setTransitions({
+        "q0|0": "q1",
+        "q0|1": "q2",
+        "q1|0": "q0",
+        "q1|1": "q3",
+        "q2|0": "q3",
+        "q2|1": "q0",
+        "q3|0": "q2",
+        "q3|1": "q1",
+      });
+    }}
+  >
+    Load Example
+  </button>
+</div>
         </form>
 
         {error ? <div style={styles.errorBox}>{error}</div> : null}
@@ -319,6 +345,15 @@ function App() {
             {isSummaryStep ? (
               <div style={styles.summaryBox}>
                 <h2 style={styles.sectionTitle}>Summary</h2>
+                <div style={{ marginTop: "10px" }}>
+  <h3>State Mapping</h3>
+
+  {minimizationResult.minimizedDFA.equivalenceClasses.map((group, idx) => (
+    <div key={idx}>
+      {group.members.join(", ")} → {group.groupId}
+    </div>
+  ))}
+</div>
                 <div style={styles.summaryRow}>
                   <div>
                     <div style={styles.summaryLabel}>Minimized States</div>
